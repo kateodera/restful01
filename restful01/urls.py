@@ -19,5 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url('', include('toys.urls')),
     url(r'^admin/', admin.site.urls),
-    url('', include('drones.urls')),
+    url(r'^v1/', include('drones.urls')),
+    url(r'^api-auth/', include('rest_framework.urls')),
+    url(r'^v2/', include('drones.v2.urls')),
 ]
