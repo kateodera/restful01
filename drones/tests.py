@@ -2,9 +2,8 @@ from django.utils.http import urlencode
 from rest_framework.reverse import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
-from .models import DroneCategory
+from .models import DroneCategory, Pilot
 from . import views
-from .models import Pilot
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
 
